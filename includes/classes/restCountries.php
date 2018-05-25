@@ -29,7 +29,6 @@ class restCountries{
 
 	function filterResults($fields){
 		$this->queryParameters[] = 'fields=' . implode(';', $fields);
-
 		return;
 	}
 
