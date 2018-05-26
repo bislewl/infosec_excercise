@@ -5,6 +5,7 @@
 3. Enter the string you would like to search
 4. Click Search
 
+
 ## Advanced Options
 There are a few features not included in the original scope.
 1. Search Suggest

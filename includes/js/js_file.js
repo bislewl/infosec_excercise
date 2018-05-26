@@ -57,9 +57,9 @@ function searchCountries() {
                 var tableRow = '';
                 $.each(countries, function (index, item) {
                     $('#countryResultsTable div table tbody').append(
-                        '<tr><td>' + item.alpha3Code + '</td><td>' + item.name + '</td><td><img src="' + item.flag + '" title="' + item.name + '"/></td><td>' + item.region + '</td><td>' + item.subregion + '</td></tr>'
+                        '<tr><td>' + item.alpha3Code + '</td><td>' + item.name + '</td><td><img src="' + item.flag + '" title="' + item.name + '"/></td><td>' + item.region + '</td><td>' + item.subregion + '</td><td><a onclick="showCountry(\''+item.alpha3Code+'\')" </td></tr>'
                     );
-                    $('#possibleCountries').append('<li id="select-' + index + '"><div class="cntrCode">' + item.alpha3Code + '</div><div class="cntrFlag"><img src="' + item.flag + '"/></div><div class="cntrName">' + item.name + '</div></li>');
+                    $('#possibleCountries').append('<li id="select-' + index + '" onClick="showCountry(\''+index+'\')"><div class="cntrCode">' + item.alpha3Code + '</div><div class="cntrFlag"><img src="' + item.flag + '"/></div><div class="cntrName">' + item.name + '</div></li>');
                 });
                 var summaryHTML = json.summeryHTML;
                 $('#searchSummary').html(summaryHTML);
@@ -83,6 +83,10 @@ function searchCountries() {
         }
         $('#progressBar').hide();
     });
+}
+function showCountry(code){
+    $('#country').val(code);
+    searchCountries();
 }
 
 function emptyDivs() {
