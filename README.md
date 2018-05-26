@@ -14,3 +14,4 @@ There are a few features not included in the original scope.
 3. Caching  
 
 Please direct questions to Larry Bislew larry@bislew.com
+or [Create an issue in github](https://github.com/bislewl/infosec_excercise/issues/new) 
