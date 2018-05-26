@@ -1,10 +1,11 @@
 function autoSuggest() {
     emptyDivs();
     var data = $("#inputForm").serialize();
+    $('#progressBar').show();
     $.ajax({
         url: "ajax_restcountries.php?action=autoSuggest",
         data: data,
-        cache: false,
+        cache: $('#enableCache').prop('checked'),
         type: 'POST',
         dataType: 'json'
     }).done(function (json) {
@@ -34,16 +35,18 @@ function autoSuggest() {
                 }
             });
         }
+        $('#progressBar').hide();
     });
 }
 
 function searchCountries() {
     emptyDivs();
+    $('#progressBar').show();
     var data = $("#inputForm").serialize();
     $.ajax({
         url: "ajax_restcountries.php?action=search",
         data: data,
-        cache: false,
+        cache: $('#enableCache').prop('checked'),
         type: 'POST',
         dataType: 'json'
     }).done(function (json) {
@@ -78,6 +81,7 @@ function searchCountries() {
                 }
             });
         }
+        $('#progressBar').hide();
     });
 }
 
@@ -95,7 +99,7 @@ function emptyDivs() {
 $(document).ready(function () {
     $("#country").keyup(function () {
         var country = $('#country').val();
-        if($('#searchSuggest').prop('checked') == true){
+        if ($('#searchSuggest').prop('checked') == true) {
             autoSuggest();
         }
     });

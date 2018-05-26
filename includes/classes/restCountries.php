@@ -18,7 +18,7 @@ class restCountries{
 
 	function validateInput($string){
 		$valid = true;
-		if(!preg_match("#^[a-zA-Z]+$#", $string)){
+		if(!preg_match('/^[a-zA-Z\s]+$/', $string)){
 			$this->addError(TEXT_ERROR_INPUT_BAD);
 			$valid = false;
 		}
