@@ -16,10 +16,10 @@ define('TEXT_RESULTS_COUNT','<span class="summaryTitle">Total Countries in Resul
 define('TEXT_RESULTS_REGIONS','<span class="summaryTitle">Regions:</span> ');
 define('TEXT_RESULTS_SUB_REGIONS','<span class="summaryTitle">Sub Regions:</span> ');
 
-define('TEXT_DETAILS_CODE_TWO','<span class="detailsTitle">2 Letter Country Code:</span> ');
-define('TEXT_DETAILS_CODE_THREE','<span class="detailsTitle">3 Letter Country Code:</span> ');
-define('TEXT_DETAILS_CODE_POPULATION','<span class="detailsTitle">Population:</span> ');
-define('TEXT_DETAILS_CODE_FLAG','<span class="detailsTitle">Flag:</span> ');
-define('TEXT_DETAILS_CODE_REGION','<span class="detailsTitle">Region:</span> ');
-define('TEXT_DETAILS_CODE_SUBREGION','<span class="detailsTitle">SubRegion:</span> ');
-define('TEXT_DETAILS_CODE_LANGUAGES','<span class="detailsTitle">Languages</span> ');
+define('TEXT_DETAILS_CODE_TWO','2 Letter Country Code: ');
+define('TEXT_DETAILS_CODE_THREE','3 Letter Country Code: ');
+define('TEXT_DETAILS_CODE_POPULATION','Population: ');
+define('TEXT_DETAILS_CODE_FLAG','Flag: ');
+define('TEXT_DETAILS_CODE_REGION','Region: ');
+define('TEXT_DETAILS_CODE_SUBREGION','SubRegion: ');
+define('TEXT_DETAILS_CODE_LANGUAGES','Languages: ');
